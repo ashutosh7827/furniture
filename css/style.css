@@ -5,6 +5,10 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+html
+{
+  overflow-x:hidden;
+}
 body {
   overflow-x: hidden;
   position: relative; }
@@ -119,7 +123,7 @@ a {
         font-size: 54px; } }
   .hero p {
     color: rgba(255, 255, 255, 0.5);
-    margin-botom: 30px; }
+    margin-bottom: 30px; }
   .hero .hero-img-wrap {
     position: relative; }
     .hero .hero-img-wrap img {
@@ -129,10 +133,11 @@ a {
       z-index: 2;
       max-width: 780px;
       left: -20px; }
-      @media (min-width: 768px) {
+      @media (max-width: 600px) {
         .hero .hero-img-wrap img {
+        width:100%;
           right: 0px;
-          left: -100px; } }
+           } }
       @media (min-width: 992px) {
         .hero .hero-img-wrap img {
           left: 0px;
